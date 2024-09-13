@@ -1,0 +1,7 @@
+<html>
+{{ range $key, $value := . }}
+<h3>{{ $key }}</h3>
+<textarea readonly cols="150" rows="20">{{ $value }}  
+</textarea>
+{{ end }}
+</html>

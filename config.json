@@ -1,0 +1,18 @@
+{
+    "Address": "127.0.0.1",
+    "Port": "8082",
+    "Commands": [
+        {
+            "Title": "Г1",
+            "Command": [ "sh", "-c", "nfdump -r $(ls /var/cache/nfdump/g1/nfcapd.* -Art | tail -n -1) -n 10 -o extended -s record/Bytes"]
+        },
+        {
+            "Title": "М1",
+            "Command": [ "sh", "-c", "nfdump -r $(ls /var/cache/nfdump/m1/nfcapd.* -Art | tail -n -1) -n 10 -o extended -s record/Bytes"]
+        },
+        {
+            "Title": "Л1",
+            "Command": [ "sh", "-c", "nfdump -r $(ls /var/cache/nfdump/l1/nfcapd.* -Art | tail -n -1) -n 10 -o extended -s record/Bytes"]
+        }
+    ]
+}
